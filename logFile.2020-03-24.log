@@ -1,0 +1,130 @@
+1238 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 4808 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1256 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1257 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+2102 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'getDataSource', defined in class path resource [com/plateer/config/MybatisConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/plateer/config/DB.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+1191 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 8504 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1194 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1195 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+2235 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'getDataSource', defined in class path resource [com/plateer/config/MybatisConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/plateer/config/DB.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+1133 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 12752 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1136 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1137 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3639 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisConfiguration' defined in file [C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes\com\plateer\config\MybatisConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'getDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.plateer.ShoppingmallCartWishlistBootApplication.main(ShoppingmallCartWishlistBootApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisConfiguration' defined in file [C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes\com\plateer\config\MybatisConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'getDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:1942)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.getDataSourceInitializer(DataSourceInitializerInvoker.java:98)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:61)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'getDataSource': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.beforeSingletonCreation(DefaultSingletonBeanRegistry.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:215)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 41 common frames omitted
+1163 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 13108 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1166 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1166 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3822 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.346 seconds (JVM running for 4.936)
+3823 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+882  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 7000 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+885  [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+886  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+4267 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.846 seconds (JVM running for 5.293)
+4270 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1028 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 3952 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1035 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1046 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3797 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.389 seconds (JVM running for 4.796)
+3799 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1031 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 4072 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1035 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1036 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3779 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.336 seconds (JVM running for 4.865)
+3783 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1093 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 12644 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1096 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1097 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3703 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.278 seconds (JVM running for 4.731)
+3704 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1030 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 12156 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1041 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1041 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3769 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.312 seconds (JVM running for 4.827)
+3771 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1156 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 3532 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1159 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1160 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+3800 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.352 seconds (JVM running for 4.796)
+3802 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello

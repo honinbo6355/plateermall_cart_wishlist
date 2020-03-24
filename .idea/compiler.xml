@@ -2,13 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shoppingmall_cart_wishlist_domain" />
         <module name="shoppingmall_cart_wishlist_boot" />
+        <module name="shoppingmall_cart_wishlist_rest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shoppingmall_cart_wishlist" target="1.5" />
+      <module name="shoppingmall_cart_wishlist_boot" target="1.8" />
+      <module name="shoppingmall_cart_wishlist_domain" target="1.8" />
+      <module name="shoppingmall_cart_wishlist_rest" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
