@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plateer.mapper.CartListMapper">
+	<select id="findCartList" resultType="com.plateer.dto.CartListDto">
+		SELECT *
+		FROM CartList
+	</select>
+	
+	<delete id="removeCart">
+		DELETE 
+		FROM CartList
+		WHERE cartCode = #{cartCode}
+	</delete>
+	
+	<delete id="removeCartList" parameterType="map">
+		DELETE 
+		FROM CartList
+		WHERE cartCode in
+		<foreach collection="list" item="cartCode" open="(" close=")" separator=",">
+			#{cartCode}
+		</foreach>
+	</delete>
+</mapper>

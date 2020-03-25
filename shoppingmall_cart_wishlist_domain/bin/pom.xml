@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shoppingmall_cart_wishlist_rest</artifactId>
+    <artifactId>shoppingmall_cart_wishlist_domain</artifactId>
 
-    <name>shoppingmall_cart_wishlist_rest</name>
+    <name>shoppingmall_cart_wishlist_domain</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -27,27 +27,6 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.2.4.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <artifactId>shoppingmall_cart_wishlist_domain</artifactId>
-            <groupId>com.plateer</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <artifactId>shoppingmall_cart_wishlist_service</artifactId>
-            <groupId>com.plateer</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.30</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

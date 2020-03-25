@@ -1,11 +1,20 @@
 package com.plateer;
 
 import com.plateer.dto.CartListDto;
+import com.plateer.service.CartListService;
+import com.plateer.service.logic.CartListLogic;
+
+import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Resource;
+
+@Slf4j
 @RestController
 @CrossOrigin(allowCredentials = "true", origins = {"*"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT},
         allowedHeaders = {"Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method",
@@ -14,44 +23,36 @@ import java.util.List;
 @RequestMapping("/api/cart")
 public class CartListController {
 
-    private List<CartListDto> cartListDto;
-
-    public CartListController() {
-        cartListDto = new ArrayList<>();
-
-        // 더미 데이터
-        cartListDto.add(new CartListDto("code1", "1", 2, "goodsCode1"));
-        cartListDto.add(new CartListDto("code2", "1", 2, "goodsCode2"));
-        cartListDto.add(new CartListDto("code3", "1", 2, "goodsCode3"));
-    }
+	@Autowired
+	private CartListLogic cartListLogic;
 
     @GetMapping("")
     public List<CartListDto> getCartList() {
-        System.out.println(cartListDto);
-
-        return cartListDto;
+    	List<CartListDto> cartListDto = cartListLogic.getCartList();
+    	System.out.println(cartListDto);
+    	return cartListDto;
     }
 
-    @PostMapping("/addCart")
-    public int addCart(String goodsCode, int cartStock) {
-        int result = 1;
-        cartListDto.add(new CartListDto("code4", "1", cartStock, goodsCode));
-        return result;
+    @PostMapping("")
+    public void addCart(@RequestBody CartListDto cartListDto) {
+        
     }
 
-    @DeleteMapping("/deleteCart")
-    public int deleteCart(String cartCode) {
-        int result = 1;
-        return result;
+    @DeleteMapping("/{cartCode}")
+    public void deleteCart(@PathVariable String cartCode) {
+    	System.out.println("cartCode : " + cartCode);
+    	
+    	cartListLogic.deleteCart(cartCode);
     }
 
-    @DeleteMapping("/deleteCartList")
-    public int deleteCartList(List<String> cartCode) {
-        int result = 1;
-        return result;
+    @DeleteMapping("/list")
+    public void deleteCartList(@RequestBody List<String> cartCodeList) {
+    	System.out.println("cartCodeList.size() : " + cartCodeList.size());
+    	
+    	cartListLogic.deleteCartList(cartCodeList);
     }
 
-    @PutMapping("/changeStock")
+    @PutMapping("")
     public int changeStock(CartListDto cartListDto) {
         int result = 1;
         return result;
