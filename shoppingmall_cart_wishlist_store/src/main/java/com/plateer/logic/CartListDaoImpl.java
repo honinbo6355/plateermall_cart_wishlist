@@ -1,8 +1,6 @@
 package com.plateer.logic;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -27,8 +25,10 @@ public class CartListDaoImpl implements CartListDao {
 	}
 
 	public void removeCartList(String userId, List<String> cartCodeList) {
-		// userId도 넘겨야 하는데.. 일단 안되서 보류
-		cartListMapper.removeCartList(cartCodeList);
+		//
+		for(String cartCode : cartCodeList) {
+			cartListMapper.removeCart(userId, cartCode);
+		}
 	}
 
 	public void saveCart(CartList cartList) {

@@ -14,7 +14,7 @@ public interface CartListMapper {
 
 	void removeCart(@Param("userId") String userId, @Param("cartCode") String cartCode);
 
-	void removeCartList(List<String> cartCodeList);
+	//void removeCartList(Map<String, Object> paramMap);
 
 	void saveCart(CartList cartList);
 

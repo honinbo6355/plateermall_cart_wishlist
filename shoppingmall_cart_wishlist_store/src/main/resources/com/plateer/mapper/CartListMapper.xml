@@ -15,14 +15,19 @@
 		WHERE userId = #{userId} AND cartCode = #{cartCode}
 	</delete>
 	
-	<delete id="removeCartList" parameterType="java.util.List">
+	<!--
+	<delete id="removeCartList" parameterType="java.util.HashMap">
 		DELETE 
 		FROM CartList
-		WHERE cartCode in
-		<foreach collection="list" item="cartCode" open="(" close=")" separator=",">
-			#{cartCode}
-		</foreach>
+		WHERE userId = #{userId}
+		<if test="cartCodeList.size != 0">
+			AND cartCode in
+			<foreach collection="cartCodeList" item="item" index="index" open="(" close=")" separator=",">
+				#{item}
+			</foreach>
+		</if>
 	</delete>
+	-->
 	
 	<insert id="saveCart">
 		INSERT
