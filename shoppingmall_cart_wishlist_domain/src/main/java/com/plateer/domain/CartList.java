@@ -1,4 +1,4 @@
-package com.plateer.dto;
+package com.plateer.domain;
 
 import lombok.*;
 
@@ -7,10 +7,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class CartListDto {
+public class CartList {
+	//
     private String cartCode;
     private String userId;
     private int cartStock;
 
     private String goodsCode;
+    
+    
 }

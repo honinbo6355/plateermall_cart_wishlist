@@ -3,18 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.plateer.mapper.CartListMapper">
-	<select id="findCartList" resultType="com.plateer.dto.CartListDto">
+	<select id="findCartList" resultType="com.plateer.domain.CartList">
 		SELECT *
 		FROM CartList
+		WHERE userId = #{userId}
 	</select>
 	
 	<delete id="removeCart">
 		DELETE 
 		FROM CartList
-		WHERE cartCode = #{cartCode}
+		WHERE userId = #{userId} AND cartCode = #{cartCode}
 	</delete>
 	
-	<delete id="removeCartList" parameterType="map">
+	<delete id="removeCartList" parameterType="java.util.List">
 		DELETE 
 		FROM CartList
 		WHERE cartCode in
@@ -22,4 +23,22 @@
 			#{cartCode}
 		</foreach>
 	</delete>
+	
+	<insert id="saveCart">
+		INSERT
+		INTO CartList
+		VALUES
+		(
+			#{cartCode},
+			#{userId},
+			#{cartStock},
+			#{goodsCode}
+		)
+	</insert>
+	
+	<update id="modifyStock">
+		UPDATE CartList
+		SET cartStock = #{cartStock}
+		WHERE userId = #{userId} AND cartCode = #{cartCode}
+	</update>
 </mapper>

@@ -1,6 +1,6 @@
 package com.plateer;
 
-import com.plateer.dto.CartListDto;
+import com.plateer.domain.CartList;
 import com.plateer.service.CartListService;
 import com.plateer.service.logic.CartListLogic;
 
@@ -27,34 +27,51 @@ public class CartListController {
 	private CartListLogic cartListLogic;
 
     @GetMapping("")
-    public List<CartListDto> getCartList() {
-    	List<CartListDto> cartListDto = cartListLogic.getCartList();
-    	System.out.println(cartListDto);
-    	return cartListDto;
+    public List<CartList> getCartList() {
+    	String userId = "user1"; // 세션에서 가져오기
+    			
+    	List<CartList> cartList = cartListLogic.getCartList(userId);
+    	System.out.println(cartList);
+    	return cartList;
     }
 
     @PostMapping("")
-    public void addCart(@RequestBody CartListDto cartListDto) {
-        
+    public void addCart(@RequestBody CartList cartList) {
+    	String userId = "user1"; // 세션에서 가져오기
+    	
+    	System.out.println("cartList : " + cartList);
+    	
+    	cartList.setUserId(userId);
+    	
+    	cartListLogic.addCart(cartList);
     }
 
     @DeleteMapping("/{cartCode}")
     public void deleteCart(@PathVariable String cartCode) {
+    	String userId = "user1"; // 세션에서 가져오기
+    	
     	System.out.println("cartCode : " + cartCode);
     	
-    	cartListLogic.deleteCart(cartCode);
+    	cartListLogic.deleteCart(userId, cartCode);
     }
 
     @DeleteMapping("/list")
     public void deleteCartList(@RequestBody List<String> cartCodeList) {
+    	String userId = "user1"; // 세션에서 가져오기
+    	
     	System.out.println("cartCodeList.size() : " + cartCodeList.size());
     	
-    	cartListLogic.deleteCartList(cartCodeList);
+    	cartListLogic.deleteCartList(userId, cartCodeList);
     }
 
     @PutMapping("")
-    public int changeStock(CartListDto cartListDto) {
-        int result = 1;
-        return result;
+    public void changeStock(@RequestBody CartList cartList) {
+    	String userId = "user1"; // 세션에서 가져오기
+    	
+    	System.out.println("cartList : " + cartList);
+    	
+    	cartList.setUserId(userId);
+    	
+    	cartListLogic.changeStock(cartList);
     }
 }

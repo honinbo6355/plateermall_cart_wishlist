@@ -4,14 +4,19 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
-import com.plateer.dto.CartListDto;
+import com.plateer.domain.CartList;
 
 @Mapper
 public interface CartListMapper {
-	List<CartListDto> findCartList();
+	List<CartList> findCartList(String userId);
 
-	void removeCart(String cartCode);
+	void removeCart(@Param("userId") String userId, @Param("cartCode") String cartCode);
 
-	void removeCartList(Map<String, List<String>> map);
+	void removeCartList(List<String> cartCodeList);
+
+	void saveCart(CartList cartList);
+
+	void modifyStock(CartList cartList);
 }

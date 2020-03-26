@@ -2,10 +2,12 @@ package com.plateer.service;
 
 import java.util.List;
 
-import com.plateer.dto.CartListDto;
+import com.plateer.domain.CartList;
 
 public interface CartListService {
-	List<CartListDto> getCartList();
-	void deleteCart(String cartCode);
-	void deleteCartList(List<String> cartCodeList);
+	List<CartList> getCartList(String userId);
+	void deleteCart(String userId, String cartCode);
+	void deleteCartList(String userId, List<String> cartCodeList);
+	void addCart(CartList cartList);
+	void changeStock(CartList cartList);
 }
