@@ -15,5 +15,4 @@ public class CartList {
 
     private String goodsCode;
     
-    
 }

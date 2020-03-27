@@ -7,6 +7,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.plateer.domain.CartList;
+import com.plateer.dto.CartListDto;
+import com.plateer.dto.SelectedOptionsDto;
 
 @Mapper
 public interface CartListMapper {
@@ -16,7 +18,7 @@ public interface CartListMapper {
 
 	//void removeCartList(Map<String, Object> paramMap);
 
-	void saveCart(CartList cartList);
+	void saveCart(CartListDto cartListDto);
 
 	void modifyStock(CartList cartList);
 }

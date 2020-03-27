@@ -36,7 +36,6 @@
 		(
 			#{cartCode},
 			#{userId},
-			#{cartStock},
 			#{goodsCode}
 		)
 	</insert>

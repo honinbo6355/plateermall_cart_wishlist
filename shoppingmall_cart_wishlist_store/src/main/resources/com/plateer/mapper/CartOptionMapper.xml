@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.plateer.mapper.CartOptionMapper">
+	<insert id="saveCartOption" parameterType="java.util.Map">
+		INSERT
+		INTO CartOption
+		VALUES
+		(
+			#{cartCode},
+			#{goodsCode},
+			#{selectedOptionsDto.text},
+			#{selectedOptionsDto.quantity}
+		)
+	</insert>
+	
+	<select id="findCartOption" resultType="com.plateer.dto.SelectedOptionsDto">
+		SELECT *
+		FROM CartOption
+		WHERE cartCode = #{cartCode} AND goodsCode = #{goodsCode}
+	</select>
+</mapper>

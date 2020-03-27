@@ -1,6 +1,7 @@
 package com.plateer;
 
 import com.plateer.domain.CartList;
+import com.plateer.dto.CartListDto;
 import com.plateer.service.CartListService;
 import com.plateer.service.logic.CartListLogic;
 
@@ -27,23 +28,21 @@ public class CartListController {
 	private CartListLogic cartListLogic;
 
     @GetMapping("")
-    public List<CartList> getCartList() {
+    public List<CartListDto> getCartList() {
     	String userId = "user1"; // 세션에서 가져오기
     			
-    	List<CartList> cartList = cartListLogic.getCartList(userId);
-    	System.out.println(cartList);
-    	return cartList;
+    	List<CartListDto> cartListDto = cartListLogic.getCartList(userId);
+    	System.out.println(cartListDto);
+    	return cartListDto;
     }
 
     @PostMapping("")
-    public void addCart(@RequestBody CartList cartList) {
+    public void addCart(@RequestBody CartListDto cartListDto) {
     	String userId = "user1"; // 세션에서 가져오기
     	
-    	System.out.println("cartList : " + cartList);
+    	cartListDto.setUserId(userId);
     	
-    	cartList.setUserId(userId);
-    	
-    	cartListLogic.addCart(cartList);
+    	cartListLogic.addCart(cartListDto);
     }
 
     @DeleteMapping("/{cartCode}")
