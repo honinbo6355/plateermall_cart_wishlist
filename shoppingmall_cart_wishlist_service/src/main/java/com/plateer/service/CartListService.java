@@ -6,9 +6,9 @@ import com.plateer.domain.CartList;
 import com.plateer.dto.CartListDto;
 
 public interface CartListService {
-	List<CartListDto> getCartList(String userId);
-	void deleteCart(String userId, String cartCode);
-	void deleteCartList(String userId, List<String> cartCodeList);
+	List<CartList> getCartList(String userId);
+	void deleteCart(CartList cart);
+	void deleteCartList(String userId, List<CartList> cartList);
 	void addCart(CartListDto cartListDto);
-	void changeStock(CartList cartList);
+	void changeQuantity(CartList cart);
 }

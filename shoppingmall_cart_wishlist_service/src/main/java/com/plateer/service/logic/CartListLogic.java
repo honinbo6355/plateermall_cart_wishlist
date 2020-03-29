@@ -28,38 +28,23 @@ public class CartListLogic implements CartListService {
 	}
 	
 	@Override
-	public List<CartListDto> getCartList(String userId) {
-		List<CartListDto> resultCartList = new ArrayList<>();
-		List<CartList> cartList = cartListDao.findCartList(userId);
-		
-		for (CartList goods : cartList) {
-			CartListDto cartListDto = new CartListDto();
-			String cartCode = goods.getCartCode();
-			String goodsCode = goods.getGoodsCode();
-
-			List<SelectedOptionsDto> selectedOptionsDto = cartListDao.findCartOption(cartCode, goodsCode);
-			
-			cartListDto.setCartCode(cartCode);
-			cartListDto.setGoodsCode(goodsCode);
-			cartListDto.setUserId(userId);
-			cartListDto.setSelectedOptions(selectedOptionsDto);
-			resultCartList.add(cartListDto);
-		}
+	public List<CartList> getCartList(String userId) {
+		List<CartList> resultCartList = cartListDao.findCartList(userId);
 		
 		return resultCartList;
 	}
 
 	@Override
-	public void deleteCart(String userId, String cartCode) {
-		cartListDao.removeCart(userId, cartCode);
+	public void deleteCart(CartList cart) {
+		cartListDao.removeCart(cart);
 	}
 
 	@Override
-	public void deleteCartList(String userId, List<String> cartCodeList) {
-		cartListDao.removeCartList(userId, cartCodeList);
+	public void deleteCartList(String userId, List<CartList> cartList) {
+		cartListDao.removeCartList(userId, cartList);
 	}
 
-	public void changeStock(CartList cartList) {
-		cartListDao.modifyStock(cartList);
+	public void changeQuantity(CartList cart) {
+		cartListDao.modifyQuantity(cart);
 	}
 }

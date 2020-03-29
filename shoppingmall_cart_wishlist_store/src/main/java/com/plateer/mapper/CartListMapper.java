@@ -14,11 +14,11 @@ import com.plateer.dto.SelectedOptionsDto;
 public interface CartListMapper {
 	List<CartList> findCartList(String userId);
 
-	void removeCart(@Param("userId") String userId, @Param("cartCode") String cartCode);
+	void removeCart(CartList cart);
 
 	//void removeCartList(Map<String, Object> paramMap);
 
-	void saveCart(CartListDto cartListDto);
+	void saveCart(Map<String, Object> cartOptionMap);
 
-	void modifyStock(CartList cartList);
+	void modifyQuantity(CartList cart);
 }

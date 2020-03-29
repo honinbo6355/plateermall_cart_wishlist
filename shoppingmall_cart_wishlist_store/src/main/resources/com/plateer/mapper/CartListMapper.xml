@@ -12,22 +12,8 @@
 	<delete id="removeCart">
 		DELETE 
 		FROM CartList
-		WHERE userId = #{userId} AND cartCode = #{cartCode}
+		WHERE cartCode = #{cartCode} AND goodsCode = #{goodsCode} AND text = #{text} 
 	</delete>
-	
-	<!--
-	<delete id="removeCartList" parameterType="java.util.HashMap">
-		DELETE 
-		FROM CartList
-		WHERE userId = #{userId}
-		<if test="cartCodeList.size != 0">
-			AND cartCode in
-			<foreach collection="cartCodeList" item="item" index="index" open="(" close=")" separator=",">
-				#{item}
-			</foreach>
-		</if>
-	</delete>
-	-->
 	
 	<insert id="saveCart">
 		INSERT
@@ -35,14 +21,16 @@
 		VALUES
 		(
 			#{cartCode},
+			#{goodsCode},
+			#{text},
 			#{userId},
-			#{goodsCode}
+			#{quantity}			
 		)
 	</insert>
 	
-	<update id="modifyStock">
+	<update id="modifyQuantity">
 		UPDATE CartList
-		SET cartStock = #{cartStock}
-		WHERE userId = #{userId} AND cartCode = #{cartCode}
+		SET quantity = #{quantity}
+		WHERE cartCode = #{cartCode} AND goodsCode = #{goodsCode} AND text = #{text}
 	</update>
 </mapper>

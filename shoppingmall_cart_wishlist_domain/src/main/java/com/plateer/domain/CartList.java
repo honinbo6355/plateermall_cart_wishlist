@@ -1,6 +1,10 @@
 package com.plateer.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
@@ -8,11 +12,9 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class CartList {
-	//
-    private String cartCode;
-    private String userId;
-    private int cartStock;
-
-    private String goodsCode;
-    
+	private String cartCode;
+	private String userId;
+	private String goodsCode;
+	private String text;
+	private int quantity;
 }

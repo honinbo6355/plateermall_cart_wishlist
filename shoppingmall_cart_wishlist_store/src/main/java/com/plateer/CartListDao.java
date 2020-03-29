@@ -9,9 +9,8 @@ import com.plateer.dto.SelectedOptionsDto;
 
 public interface CartListDao {
 	List<CartList> findCartList(String userId);
-	void removeCart(String userId, String cartCode);
-	void removeCartList(String userId, List<String> cartCodeList);
+	void removeCart(CartList cart);
+	void removeCartList(String userId, List<CartList> cartList);
 	void saveCart(CartListDto cartListDto);
-	void modifyStock(CartList cartList);
-	List<SelectedOptionsDto> findCartOption(String cartCode, String goodsCode);
+	void modifyQuantity(CartList cart);
 }

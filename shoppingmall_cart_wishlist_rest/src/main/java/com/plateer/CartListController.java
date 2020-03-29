@@ -28,49 +28,51 @@ public class CartListController {
 	private CartListLogic cartListLogic;
 
     @GetMapping("")
-    public List<CartListDto> getCartList() {
+    public List<CartList> getCartList() {
     	String userId = "user1"; // 세션에서 가져오기
     			
-    	List<CartListDto> cartListDto = cartListLogic.getCartList(userId);
-    	System.out.println(cartListDto);
-    	return cartListDto;
+    	List<CartList> cartList = cartListLogic.getCartList(userId);
+    	System.out.println(cartList);
+    	return cartList;
     }
 
     @PostMapping("")
-    public void addCart(@RequestBody CartListDto cartListDto) {
+    public void addCart(@RequestBody CartListDto cartDto) {
     	String userId = "user1"; // 세션에서 가져오기
     	
-    	cartListDto.setUserId(userId);
+    	cartDto.setUserId(userId);
     	
-    	cartListLogic.addCart(cartListDto);
+    	cartListLogic.addCart(cartDto);
     }
 
-    @DeleteMapping("/{cartCode}")
-    public void deleteCart(@PathVariable String cartCode) {
+    @DeleteMapping("")
+    public void deleteCart(@RequestBody CartList cart) {
     	String userId = "user1"; // 세션에서 가져오기
     	
-    	System.out.println("cartCode : " + cartCode);
+    	cart.setUserId(userId);
     	
-    	cartListLogic.deleteCart(userId, cartCode);
+    	System.out.println("cartList : " + cart);
+    	
+    	cartListLogic.deleteCart(cart);
     }
 
     @DeleteMapping("/list")
-    public void deleteCartList(@RequestBody List<String> cartCodeList) {
+    public void deleteCartList(@RequestBody List<CartList> cartList) {
     	String userId = "user1"; // 세션에서 가져오기
     	
-    	System.out.println("cartCodeList.size() : " + cartCodeList.size());
+    	System.out.println("cartList.size() : " + cartList.size());
     	
-    	cartListLogic.deleteCartList(userId, cartCodeList);
+    	cartListLogic.deleteCartList(userId, cartList);
     }
 
     @PutMapping("")
-    public void changeStock(@RequestBody CartList cartList) {
+    public void changeQuantity(@RequestBody CartList cart) {
     	String userId = "user1"; // 세션에서 가져오기
     	
-    	System.out.println("cartList : " + cartList);
+    	System.out.println("cart : " + cart);
     	
-    	cartList.setUserId(userId);
+    	cart.setUserId(userId);
     	
-    	cartListLogic.changeStock(cartList);
+    	cartListLogic.changeQuantity(cart);
     }
 }
