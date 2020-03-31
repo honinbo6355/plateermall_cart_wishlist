@@ -8,4 +8,5 @@ public interface WishlistDao {
 	void saveWishList(String userId, List<Wishlist> wishList);
 	void saveWish(Wishlist wish);
 	List<String> findGoodsCodes(String userId);
+	void removeGoodsWish(String goodsCode);
 }

@@ -6,7 +6,9 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @CrossOrigin(allowCredentials = "true", origins = {"*"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT},
         allowedHeaders = {"Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method",
-                "Access-Control-Request-Headers", "Access-Control-Allow-Origin", "Set-Cookie"},
+                "Access-Control-Request-Headers", "Access-Control-Allow-Origin", "Set-Cookie", "Authorization"},
         exposedHeaders = {"Access-Control-Allow-Origin", "Access-Control-Allow-Credentials"}, maxAge = 3000)
 @RequestMapping("/api/wishlist")
 public class WishlistController {
@@ -59,5 +61,12 @@ public class WishlistController {
 		System.out.println("goodsCodes : " + goodsCodes);
 		
 		return goodsCodes;
+	}
+	
+	@DeleteMapping("{goodsCode}")
+	public void deleteGoodsWish(@PathVariable("goodsCode") String goodsCode) {
+		System.out.println(goodsCode);
+		
+		wishlistLogic.deleteGoodsWish(goodsCode);
 	}
 }

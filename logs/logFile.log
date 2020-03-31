@@ -1,5 +1,17 @@
-977  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 13840 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
-984  [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
-991  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
-4100 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.68 seconds (JVM running for 5.043)
-4102 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+1986 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 15368 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+1994 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1994 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+4976 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.757 seconds (JVM running for 7.24)
+4979 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+20869 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+20883 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: user1(String)
+20911 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1
+107299 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+107300 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: user1(String)
+107310 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1
+110916 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+110916 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+110922 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 2
+112502 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+112502 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: user1(String)
+112508 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1

@@ -28,10 +28,8 @@ public class CartListDaoImpl implements CartListDao {
 		cartListMapper.removeCart(cart);
 	}
 
-	public void removeCartList(String userId, List<CartList> cartList) {
+	public void removeCartList(List<CartList> cartList) {
 		for(CartList cart : cartList) {
-			cart.setUserId(userId);
-			
 			cartListMapper.removeCart(cart);
 		}
 	}

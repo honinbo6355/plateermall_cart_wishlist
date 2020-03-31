@@ -34,4 +34,8 @@ public class WishlistDaoImpl implements WishlistDao {
 	public List<String> findGoodsCodes(String userId) {
 		return wishlistMapper.findGoodsCodes(userId);
 	}
+
+	public void removeGoodsWish(String goodsCode) {
+		wishlistMapper.removeGoodsWish(goodsCode);
+	}
 }

@@ -31,4 +31,8 @@ public class WishlistLogic implements WishlistService {
 	public List<String> getGoodsCodes(String userId) {
 		return wishlistDaoImpl.findGoodsCodes(userId);
 	}
+
+	public void deleteGoodsWish(String goodsCode) {
+		wishlistDaoImpl.removeGoodsWish(goodsCode);
+	}
 }

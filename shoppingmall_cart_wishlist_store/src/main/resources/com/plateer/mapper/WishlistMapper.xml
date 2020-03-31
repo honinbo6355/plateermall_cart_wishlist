@@ -19,4 +19,10 @@
 		FROM WishList
 		WHERE userId = #{userId}
 	</select>
+	
+	<delete id="removeGoodsWish">
+		DELETE 
+		FROM WishList
+		WHERE goodsCode = #{goodsCode}
+	</delete>
 </mapper>

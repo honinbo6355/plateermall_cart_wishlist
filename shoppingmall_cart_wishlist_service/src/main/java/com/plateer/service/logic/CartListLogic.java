@@ -40,8 +40,8 @@ public class CartListLogic implements CartListService {
 	}
 
 	@Override
-	public void deleteCartList(String userId, List<CartList> cartList) {
-		cartListDao.removeCartList(userId, cartList);
+	public void deleteCartList(List<CartList> cartList) {
+		cartListDao.removeCartList(cartList);
 	}
 
 	public void changeQuantity(CartList cart) {

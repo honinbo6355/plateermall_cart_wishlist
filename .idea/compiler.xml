@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shoppingmall_cart_wishlist_store" />
         <module name="shoppingmall_cart_wishlist_domain" />
         <module name="shoppingmall_cart_wishlist_boot" />
+        <module name="shoppingmall_cart_wishlist_service" />
         <module name="shoppingmall_cart_wishlist_rest" />
       </profile>
     </annotationProcessing>
@@ -16,6 +18,8 @@
       <module name="shoppingmall_cart_wishlist_boot" target="1.8" />
       <module name="shoppingmall_cart_wishlist_domain" target="1.8" />
       <module name="shoppingmall_cart_wishlist_rest" target="1.8" />
+      <module name="shoppingmall_cart_wishlist_service" target="1.8" />
+      <module name="shoppingmall_cart_wishlist_store" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

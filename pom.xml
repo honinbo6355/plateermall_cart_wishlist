@@ -10,8 +10,8 @@
     <module>shoppingmall_cart_wishlist_boot</module>
     <module>shoppingmall_cart_wishlist_rest</module>
     <module>shoppingmall_cart_wishlist_domain</module>
-    <module>shoppingmall_cart_wishlist-service</module>
-    <module>shoppingmall_cart_wishlist-store</module>
+    <module>shoppingmall_cart_wishlist_service</module>
+    <module>shoppingmall_cart_wishlist_store</module>
   </modules>
 
   <packaging>pom</packaging>

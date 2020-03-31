@@ -11,4 +11,6 @@ public interface WishlistMapper {
 	void saveWish(Wishlist wish);
 
 	List<String> findGoodsCodes(String userId);
+
+	void removeGoodsWish(String goodsCode);
 }

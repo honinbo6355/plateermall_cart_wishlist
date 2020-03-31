@@ -1,0 +1,5 @@
+977  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 13840 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist)
+984  [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+991  [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+4100 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 3.68 seconds (JVM running for 5.043)
+4102 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
