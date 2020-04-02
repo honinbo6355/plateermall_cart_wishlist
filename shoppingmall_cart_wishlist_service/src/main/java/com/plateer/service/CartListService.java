@@ -2,6 +2,7 @@ package com.plateer.service;
 
 import java.util.List;
 
+import com.plateer.domain.CardDiscountInfo;
 import com.plateer.domain.CartList;
 import com.plateer.dto.CartListDto;
 
@@ -11,4 +12,5 @@ public interface CartListService {
 	void deleteCartList(List<CartList> cartList);
 	void addCart(CartListDto cartListDto);
 	void changeQuantity(CartList cart);
+	List<CardDiscountInfo> getCardDiscountInfo();
 }

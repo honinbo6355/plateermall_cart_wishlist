@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.plateer.CartListDao;
+import com.plateer.domain.CardDiscountInfo;
 import com.plateer.domain.CartList;
 import com.plateer.dto.CartListDto;
 import com.plateer.dto.SelectedOptionsDto;
@@ -51,5 +52,9 @@ public class CartListDaoImpl implements CartListDao {
 
 	public void modifyQuantity(CartList cart) {
 		cartListMapper.modifyQuantity(cart);
+	}
+
+	public List<CardDiscountInfo> findCardDiscountInfo() {
+		return cartListMapper.findCardDiscountInfo();
 	}
 }

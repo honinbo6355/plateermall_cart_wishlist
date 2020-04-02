@@ -1,5 +1,6 @@
 package com.plateer;
 
+import com.plateer.domain.CardDiscountInfo;
 import com.plateer.domain.CartList;
 import com.plateer.dto.CartListDto;
 import com.plateer.service.CartListService;
@@ -52,5 +53,10 @@ public class CartListController {
     @PutMapping("")
     public void changeQuantity(@RequestBody CartList cart) {
     	cartListLogic.changeQuantity(cart);
+    }
+    
+    @GetMapping("/cardInfo")
+    public List<CardDiscountInfo> getCardDiscountInfo() {
+    	return cartListLogic.getCardDiscountInfo();
     }
 }

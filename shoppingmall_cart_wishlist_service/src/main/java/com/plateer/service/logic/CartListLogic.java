@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.plateer.CartListDao;
+import com.plateer.domain.CardDiscountInfo;
 import com.plateer.domain.CartList;
 import com.plateer.dto.CartListDto;
 import com.plateer.dto.SelectedOptionsDto;
@@ -46,5 +47,9 @@ public class CartListLogic implements CartListService {
 
 	public void changeQuantity(CartList cart) {
 		cartListDao.modifyQuantity(cart);
+	}
+
+	public List<CardDiscountInfo> getCardDiscountInfo() {
+		return cartListDao.findCardDiscountInfo();
 	}
 }

@@ -33,4 +33,9 @@
 		SET quantity = #{quantity}
 		WHERE cartCode = #{cartCode} AND goodsCode = #{goodsCode} AND text = #{text}
 	</update>
+	
+	<select id="findCardDiscountInfo" resultType="com.plateer.domain.CardDiscountInfo">
+		SELECT *
+		FROM CardDiscountInfo
+	</select>
 </mapper>
