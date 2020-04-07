@@ -17,10 +17,9 @@ public class WishlistDaoImpl implements WishlistDao {
 	private WishlistMapper wishlistMapper;
 	
 	@Override
-	public void saveWishList(String userId, List<Wishlist> wishList) {
+	public void saveWishList(List<Wishlist> wishList) {
 		for (Wishlist wish : wishList) {
 			wish.setWishCode(UUID.randomUUID().toString());
-			wish.setUserId(userId);
 			
 			wishlistMapper.saveWish(wish);
 		}

@@ -1,0 +1,518 @@
+1254 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Starting ShoppingmallCartWishlistBootApplication on DESKTOP-320BHRG with PID 13876 (C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot\target\classes started by notebiz1029 in C:\Users\notebiz1029\Documents\git\shoppingmall_cart_wishlist\shoppingmall_cart_wishlist_boot)
+1265 [main] DEBUG c.p.ShoppingmallCartWishlistBootApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+1266 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - No active profile set, falling back to default profiles: default
+5759 [main] INFO  c.p.ShoppingmallCartWishlistBootApplication - Started ShoppingmallCartWishlistBootApplication in 5.179 seconds (JVM running for 7.075)
+5762 [main] ERROR c.p.ShoppingmallCartWishlistBootApplication - hello
+162747 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+162759 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+162777 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+193905 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+193905 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+193922 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+221902 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+221902 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+221907 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+856854 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+856854 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+856859 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+869493 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+869493 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+869499 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+1163739 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - ==>  Preparing: INSERT INTO CartList VALUES ( ?, ?, ?, ?, ? ) 
+1163741 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - ==> Parameters: 63f88f84-2b84-402a-b2f1-14158aa29afc(String), 1002898720(String), 230(String), lsk@naver.com(String), 3(Integer)
+1163746 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - <==    Updates: 1
+1163746 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - ==>  Preparing: INSERT INTO CartList VALUES ( ?, ?, ?, ?, ? ) 
+1163747 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - ==> Parameters: 63f88f84-2b84-402a-b2f1-14158aa29afc(String), 1002898720(String), 240(String), lsk@naver.com(String), 1(Integer)
+1163751 [http-nio-9999-exec-4] DEBUG c.p.mapper.CartListMapper.saveCart - <==    Updates: 1
+1237773 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+1237774 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+1237782 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 4
+1238074 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+1238074 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+1238079 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+1352261 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+1352263 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+1352270 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+1356962 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+1356962 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+1356968 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+1371524 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+1371524 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+1371530 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 4
+1371699 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+1371699 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+1371705 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+9811551 [http-nio-9999-exec-6] DEBUG c.p.mapper.CartListMapper.saveCart - ==>  Preparing: INSERT INTO CartList VALUES ( ?, ?, ?, ?, ? ) 
+9811552 [http-nio-9999-exec-6] DEBUG c.p.mapper.CartListMapper.saveCart - ==> Parameters: b83a1a18-2b71-4e49-9661-d83fb7c29785(String), 1002178921(String), 블랙/230(String), lsk@naver.com(String), 6(Integer)
+9811558 [http-nio-9999-exec-6] DEBUG c.p.mapper.CartListMapper.saveCart - <==    Updates: 1
+9814107 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+9814107 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+9814116 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+9814492 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+9814495 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+9814503 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+9869972 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+9869972 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+9869979 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+9870297 [http-nio-9999-exec-6] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+9870298 [http-nio-9999-exec-6] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+9870312 [http-nio-9999-exec-6] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+9960179 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+9960179 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+9960186 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+9960515 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+9960515 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+9960521 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+10050018 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10050019 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10050025 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10065503 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10065503 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10065508 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10069692 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10069692 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10069697 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10073570 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10073571 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10073579 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10074721 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10074721 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10074729 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10075849 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10075849 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10075857 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10076784 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10076784 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10076789 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10532929 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10532930 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10532939 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+10583365 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+10583366 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+10583374 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11188760 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11188760 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11188766 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11262528 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11262528 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11262544 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11264067 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11264067 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11264074 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11273042 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11273043 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11273057 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11285514 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11285515 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11285527 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11520152 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11520152 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11520163 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11527584 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11527585 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11527594 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11568587 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11568588 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11568602 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11850521 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11850521 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11850527 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11858473 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11858474 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11858486 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+11950806 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+11950806 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+11950817 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+12314326 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+12314326 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+12314332 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+12323565 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+12323565 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+12323571 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+12583180 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+12583181 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+12583186 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+12600779 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+12600780 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+12600785 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13234397 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13234398 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13234407 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13371142 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13371143 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13371150 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13393484 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13393484 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13393490 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13395158 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13395158 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13395163 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13396631 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13396631 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13396636 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13397128 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+13397129 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+13397134 [http-nio-9999-exec-7] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1
+13397400 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+13397400 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+13397408 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+13404035 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13404035 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13404040 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13405706 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13405706 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13405712 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13411429 [http-nio-9999-exec-8] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+13411429 [http-nio-9999-exec-8] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+13411660 [http-nio-9999-exec-8] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1
+13411779 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+13411779 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+13411785 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+13441129 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13441129 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13441135 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13443085 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13443085 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13443090 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13453571 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13453572 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13453580 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13455455 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13455456 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13455462 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13459042 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13459042 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13459048 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13462885 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13462885 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13462890 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13477434 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+13477434 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+13477441 [http-nio-9999-exec-9] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 1
+13477590 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+13477591 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+13477600 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+13536937 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - ==>  Preparing: INSERT INTO CartList VALUES ( ?, ?, ?, ?, ? ) 
+13536937 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - ==> Parameters: c8dcfb12-e37d-477f-941c-c63ca8465b30(String), 1203973747(String), 245(String), tester1@naver.com(String), 3(Integer)
+13536942 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - <==    Updates: 1
+13536943 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - ==>  Preparing: INSERT INTO CartList VALUES ( ?, ?, ?, ?, ? ) 
+13536943 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - ==> Parameters: c8dcfb12-e37d-477f-941c-c63ca8465b30(String), 1203973747(String), 255(String), tester1@naver.com(String), 2(Integer)
+13536949 [http-nio-9999-exec-3] DEBUG c.p.mapper.CartListMapper.saveCart - <==    Updates: 1
+13548714 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+13548714 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+13548720 [http-nio-9999-exec-6] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 3
+13549030 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+13549031 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+13549037 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+13593425 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+13593425 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+13593432 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+13595080 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+13595081 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+13595160 [http-nio-9999-exec-3] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 3
+13595380 [http-nio-9999-exec-5] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+13595380 [http-nio-9999-exec-5] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+13595386 [http-nio-9999-exec-5] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+14008307 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14008307 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14008319 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14015267 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14015268 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14015273 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14172398 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14172398 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14172402 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14174425 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14174425 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14174430 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14175376 [http-nio-9999-exec-10] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+14175376 [http-nio-9999-exec-10] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+14175383 [http-nio-9999-exec-10] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 3
+14175589 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+14175589 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+14175596 [http-nio-9999-exec-1] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+14362132 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14362133 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14362139 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14363811 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14363812 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14363817 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14370609 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14370609 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14370614 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14462726 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14462726 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14462736 [http-nio-9999-exec-6] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14472050 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14472050 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14472055 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14535631 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14535631 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14535636 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14605231 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14605232 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14605237 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14612342 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14612342 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14612348 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14770159 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14770159 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14770184 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14959692 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+14959692 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+14959733 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+14962815 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+14962816 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+14962843 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 3
+14963235 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+14963235 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+14963240 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15019414 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15019414 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15019446 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+15021323 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15021323 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15021330 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 0
+15022252 [http-nio-9999-exec-1] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+15022253 [http-nio-9999-exec-1] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: tester1@naver.com(String)
+15022259 [http-nio-9999-exec-1] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 3
+15022549 [http-nio-9999-exec-4] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+15022549 [http-nio-9999-exec-4] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+15022584 [http-nio-9999-exec-4] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15026568 [http-nio-9999-exec-7] DEBUG c.p.mapper.WishlistMapper.saveWish - ==>  Preparing: INSERT INTO WishList VALUES ( ?, ?, ? ) 
+15026572 [http-nio-9999-exec-7] DEBUG c.p.mapper.WishlistMapper.saveWish - ==> Parameters: 5e6af07f-b8ef-4965-893c-1e48e40c2809(String), 1203973747(String), user1(String)
+15026578 [http-nio-9999-exec-7] DEBUG c.p.mapper.WishlistMapper.saveWish - <==    Updates: 1
+15027602 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15027602 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15027615 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15029876 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15029876 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15029919 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15046318 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15046319 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15046326 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15047353 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15047353 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15047362 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15047970 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15047970 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15047981 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15054247 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15054247 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15054266 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15055797 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15055797 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15055803 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15088664 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15088665 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15088670 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15091823 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15091823 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15091845 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15112225 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15112225 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15112231 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15113975 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15113976 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15113991 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15127271 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15127271 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15127276 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15148911 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15148911 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15148916 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15151630 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+15151631 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+15151638 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+15151967 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+15151968 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+15151974 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15155187 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15155187 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15155191 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15156779 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15156779 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15156816 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15165558 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15165559 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15165564 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15170296 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+15170297 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+15170304 [http-nio-9999-exec-4] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+15170550 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+15170550 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+15170556 [http-nio-9999-exec-7] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15176447 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15176448 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15176490 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15183767 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15183767 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15183772 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15237680 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15237681 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15237687 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15244592 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15244593 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15244599 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15443070 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15443071 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15443077 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15480207 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+15480208 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+15480215 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+15480485 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+15480486 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+15480493 [http-nio-9999-exec-3] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15489384 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489384 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489396 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489449 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489449 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489473 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489490 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489490 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489502 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489569 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489569 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489575 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489626 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489626 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489641 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489710 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489710 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489716 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15489764 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15489764 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15489793 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15619536 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15619536 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15619555 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15619559 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15619559 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15619565 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15619595 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15619597 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15619609 [http-nio-9999-exec-9] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15619627 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15619627 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15619632 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15621323 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15621323 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15621328 [http-nio-9999-exec-3] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15633461 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15633462 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15633469 [http-nio-9999-exec-4] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15663519 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15663519 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15663564 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15695543 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15695543 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15695556 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15703832 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15703832 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15703836 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15708645 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15708646 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15708661 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15715668 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15715668 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15715704 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15716305 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15716305 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15716323 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15716986 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15716986 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15716993 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15718058 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15718058 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15718069 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15718891 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15718891 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15718900 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15754901 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15754901 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15754909 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15755558 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15755558 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15755596 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15756630 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15756630 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15756634 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15765662 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15765662 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15765667 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15766838 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15766838 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15766851 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15768649 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15768650 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15768655 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15777995 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15777995 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15778002 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15779242 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15779242 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15779250 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15789426 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15789426 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15789433 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15791244 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15791244 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15791255 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15822672 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15822672 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15822709 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15840881 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15840881 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15840886 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15847413 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15847414 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15847450 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15850950 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15850950 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15850997 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15851599 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15851599 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15851603 [http-nio-9999-exec-10] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15901104 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15901104 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15901111 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15911960 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15911961 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15911968 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15918918 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15918918 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15918924 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15942992 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15942992 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15943002 [http-nio-9999-exec-8] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15944515 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==>  Preparing: SELECT * FROM CartList WHERE userId = ? 
+15944516 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - ==> Parameters: lsk@naver.com(String)
+15944529 [http-nio-9999-exec-2] DEBUG c.p.m.CartListMapper.findCartList - <==      Total: 5
+15944828 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==>  Preparing: SELECT * FROM CardDiscountInfo 
+15944828 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - ==> Parameters: 
+15944861 [http-nio-9999-exec-10] DEBUG c.p.m.C.findCardDiscountInfo - <==      Total: 2
+15947781 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15947781 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15947790 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15949427 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15949427 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15949448 [http-nio-9999-exec-5] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+15950586 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+15950586 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+15950597 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+16151242 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+16151243 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+16151259 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+16160362 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+16160362 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+16160373 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+16243829 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+16243830 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+16243840 [http-nio-9999-exec-2] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+16245435 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+16245436 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+16245443 [http-nio-9999-exec-1] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1
+16255125 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==>  Preparing: SELECT DISTINCT goodsCode FROM WishList WHERE userId = ? 
+16255125 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - ==> Parameters: user1(String)
+16255129 [http-nio-9999-exec-7] DEBUG c.p.m.WishlistMapper.findGoodsCodes - <==      Total: 1

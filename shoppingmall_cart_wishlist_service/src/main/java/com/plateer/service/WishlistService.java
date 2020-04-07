@@ -7,7 +7,7 @@ import com.plateer.domain.Wishlist;
 
 public interface WishlistService {
 	
-	void addWishList(String userId, List<Wishlist> wishList);
+	void addWishList(List<Wishlist> wishList);
 	void addWish(Wishlist wish);
 	List<String> getGoodsCodes(String userId);
 	void deleteGoodsWish(String goodsCode);

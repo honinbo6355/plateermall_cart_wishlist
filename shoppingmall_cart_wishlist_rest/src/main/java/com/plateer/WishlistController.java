@@ -45,16 +45,14 @@ public class WishlistController {
 	
 	@PostMapping("/list")
 	public void addGoodsList(@RequestBody List<Wishlist> wishList) {
-		String userId = "user1"; // 세션에서 가져오기
-		
 		System.out.println("wishList : " + wishList);
 		
-		wishlistLogic.addWishList(userId, wishList);
+		wishlistLogic.addWishList(wishList);
 	}
 	
-	@GetMapping("")
-	public List<String> getGoodsCodes() {
-		String userId = "user1"; // 세션에서 가져오기
+	@GetMapping("{userId}")
+	public List<String> getGoodsCodes(@PathVariable("userId") String userId) {
+		System.out.println("userId : " + userId);
 		
 		List<String> goodsCodes = wishlistLogic.getGoodsCodes(userId);
 		

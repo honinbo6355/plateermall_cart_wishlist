@@ -18,8 +18,8 @@ public class WishlistLogic implements WishlistService {
 	private WishlistDaoImpl wishlistDaoImpl;
 	
 	@Override
-	public void addWishList(String userId, List<Wishlist> wishList) {
-		wishlistDaoImpl.saveWishList(userId, wishList);
+	public void addWishList(List<Wishlist> wishList) {
+		wishlistDaoImpl.saveWishList(wishList);
 	}
 
 	@Override
