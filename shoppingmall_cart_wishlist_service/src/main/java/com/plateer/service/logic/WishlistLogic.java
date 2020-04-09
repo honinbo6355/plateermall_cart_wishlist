@@ -7,6 +7,7 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.plateer.WishlistDao;
 import com.plateer.domain.Wishlist;
 import com.plateer.logic.WishlistDaoImpl;
 import com.plateer.service.WishlistService;
@@ -14,25 +15,28 @@ import com.plateer.service.WishlistService;
 @Service
 public class WishlistLogic implements WishlistService {
 
-	@Autowired
-	private WishlistDaoImpl wishlistDaoImpl;
+	private WishlistDao wishlistDao;
+	
+	public WishlistLogic(WishlistDaoImpl wishlistDaoImpl) {
+		this.wishlistDao = wishlistDaoImpl;
+	}
 	
 	@Override
 	public void addWishList(List<Wishlist> wishList) {
-		wishlistDaoImpl.saveWishList(wishList);
+		wishlistDao.saveWishList(wishList);
 	}
 
 	@Override
 	public void addWish(Wishlist wish) {
 		wish.setWishCode(UUID.randomUUID().toString());
-		wishlistDaoImpl.saveWish(wish);
+		wishlistDao.saveWish(wish);
 	}
 
 	public List<String> getGoodsCodes(String userId) {
-		return wishlistDaoImpl.findGoodsCodes(userId);
+		return wishlistDao.findGoodsCodes(userId);
 	}
 
 	public void deleteGoodsWish(String goodsCode) {
-		wishlistDaoImpl.removeGoodsWish(goodsCode);
+		wishlistDao.removeGoodsWish(goodsCode);
 	}
 }

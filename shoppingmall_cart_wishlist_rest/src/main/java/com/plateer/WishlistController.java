@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.plateer.domain.Wishlist;
+import com.plateer.service.WishlistService;
 import com.plateer.service.logic.WishlistLogic;
 
 import lombok.extern.slf4j.Slf4j;
@@ -29,32 +30,31 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/api/wishlist")
 public class WishlistController {
 
-	@Autowired
-	private WishlistLogic wishlistLogic;
+	private WishlistService wishlistService;
+	
+	public WishlistController(WishlistLogic wishlistLogic) {
+		this.wishlistService = wishlistLogic;
+	}
 	
 	@PostMapping("")
 	public void addGoods(@RequestBody Wishlist wish) {
-		String userId = "user1"; // 세션에서 가져오기
-		
 		System.out.println("wish : " + wish);
 		
-		wish.setUserId(userId);
-		
-		wishlistLogic.addWish(wish);
+		wishlistService.addWish(wish);
 	}
 	
 	@PostMapping("/list")
 	public void addGoodsList(@RequestBody List<Wishlist> wishList) {
 		System.out.println("wishList : " + wishList);
 		
-		wishlistLogic.addWishList(wishList);
+		wishlistService.addWishList(wishList);
 	}
 	
 	@GetMapping("{userId}")
 	public List<String> getGoodsCodes(@PathVariable("userId") String userId) {
 		System.out.println("userId : " + userId);
 		
-		List<String> goodsCodes = wishlistLogic.getGoodsCodes(userId);
+		List<String> goodsCodes = wishlistService.getGoodsCodes(userId);
 		
 		System.out.println("goodsCodes : " + goodsCodes);
 		
@@ -65,6 +65,6 @@ public class WishlistController {
 	public void deleteGoodsWish(@PathVariable("goodsCode") String goodsCode) {
 		System.out.println(goodsCode);
 		
-		wishlistLogic.deleteGoodsWish(goodsCode);
+		wishlistService.deleteGoodsWish(goodsCode);
 	}
 }

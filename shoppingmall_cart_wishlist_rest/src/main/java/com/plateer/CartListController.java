@@ -25,38 +25,41 @@ import javax.annotation.Resource;
 @RequestMapping("/api/cart")
 public class CartListController {
 
-	@Autowired
-	private CartListLogic cartListLogic;
+	private CartListService cartListService;
+	
+	public CartListController(CartListLogic cartListLogic) {
+		this.cartListService = cartListLogic;
+	}
 
     @GetMapping("{userId}")
     public List<CartList> getCartList(@PathVariable("userId") String userId) {
-    	List<CartList> cartList = cartListLogic.getCartList(userId);
+    	List<CartList> cartList = cartListService.getCartList(userId);
     	System.out.println(cartList);
     	return cartList;
     }
 
     @PostMapping("")
     public void addCart(@RequestBody CartListDto cartDto) {
-    	cartListLogic.addCart(cartDto);
+    	cartListService.addCart(cartDto);
     }
 
     @DeleteMapping("")
     public void deleteCart(@RequestBody CartList cart) {
-    	cartListLogic.deleteCart(cart);
+    	cartListService.deleteCart(cart);
     }
 
     @DeleteMapping("/list")
     public void deleteCartList(@RequestBody List<CartList> cartList) {
-    	cartListLogic.deleteCartList(cartList);
+    	cartListService.deleteCartList(cartList);
     }
 
     @PutMapping("")
     public void changeQuantity(@RequestBody CartList cart) {
-    	cartListLogic.changeQuantity(cart);
+    	cartListService.changeQuantity(cart);
     }
     
     @GetMapping("/cardInfo")
     public List<CardDiscountInfo> getCardDiscountInfo() {
-    	return cartListLogic.getCardDiscountInfo();
+    	return cartListService.getCardDiscountInfo();
     }
 }

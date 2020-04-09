@@ -20,8 +20,11 @@ import com.plateer.service.CartListService;
 @Service
 public class CartListLogic implements CartListService {
 	
-	@Autowired
-	private CartListDaoImpl cartListDao;
+	private CartListDao cartListDao;
+	
+	public CartListLogic(CartListDaoImpl cartListDaoImpl) {
+		this.cartListDao = cartListDaoImpl;
+	}
 	
 	public void addCart(CartListDto cartListDto) {
 		cartListDto.setCartCode(UUID.randomUUID().toString());
