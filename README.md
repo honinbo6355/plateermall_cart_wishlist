@@ -1,8 +1,8 @@
 # shoppingmall_cart_wishlist
 
 ### class diagram
-![class_diagram](https://gitlab.com/2020-flateer/plateer_project/shoppingmall_cart_wishlist/-/raw/master/diagram/class%20diagram.png)
+![class diagram](https://user-images.githubusercontent.com/29749722/96530651-d9163a00-12c2-11eb-8c96-8aeb37dc6580.png)
 
 
 ### use case diagram
-![use_case_diagram](https://gitlab.com/2020-flateer/plateer_project/shoppingmall_cart_wishlist/-/raw/master/diagram/use%20case%20diagram.png)
+![use case diagram](https://user-images.githubusercontent.com/29749722/96530719-f6e39f00-12c2-11eb-8887-d04fff2156e2.png)
