@@ -3,6 +3,11 @@
 
 <br />
 
+### swagger url
+https://shoppingmall-cart-wishlist.herokuapp.com
+
+<br />
+
 ### class diagram
 ![class diagram](https://user-images.githubusercontent.com/29749722/96530651-d9163a00-12c2-11eb-8c96-8aeb37dc6580.png)
 
